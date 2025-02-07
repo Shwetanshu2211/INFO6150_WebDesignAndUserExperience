@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Feedback Form</title>
+    <style>
+      label {
+        float: left;
+        width: 150px;
+      }
+      #container {
+        width: 700px;
+        margin: auto;
+        background-color: beige;
+        padding: 20px;
+      }
+      main {
+        padding: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+      }
+      .error {
+        color: red;
+        font-size: 12px;
+        display: none;
+      }
+      .char-counter {
+        font-size: 12px;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <main>
+        <h2>Feedback Form</h2>
+        <h3>Love something? Hate something? Let us know!</h3>
+        Note: Fields marked with an asterisk (*) are mandatory.
+        <br /><br />
+
+        <form method="post" novalidate>
+          <label>Title*:</label>
+          <input
+            type="radio"
+            name="title"
+            id="miss"
+            value="miss"
+            required
+          />Miss
+          <input type="radio" name="title" id="mr" value="mr" required />Mr.
+          <input type="radio" name="title" id="mrs" value="mrs" required />Mrs.
+          <span class="error" id="titleError">Please select a title.</span>
+          <br /><br />
+
+          <label for="firstName">First Name*:</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="First Name"
+            required
+          />
+          <span class="error" id="firstNameError"
+            >First name must be 2-50 characters and alphanumeric.</span
+          >
+          <br /><br />
+
+          <label for="lastName">Last Name*:</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Last Name"
+            required
+          />
+          <span class="error" id="lastNameError"
+            >Last name must be 2-50 characters and alphanumeric.</span
+          >
+          <br /><br />
+
+          <label for="emailId">Email Id*:</label>
+          <input
+            type="text"
+            name="emailId"
+            id="emailId"
+            placeholder="yourname@northeastern.edu"
+            required
+          />
+          <span class="error" id="emailError"
+            >Email must be valid and end with @northeastern.edu.</span
+          >
+          <br /><br />
+
+          <label for="phoneNumber">Phone Number*:</label>
+          <input
+            type="text"
+            name="phoneNumber"
+            id="phoneNumber"
+            placeholder="(XXX) XXX-XXXX"
+            required
+          />
+          <span class="error" id="phoneError"
+            >Phone number must be in the format (XXX) XXX-XXXX.</span
+          >
+          <br /><br />
+
+          <label for="streetAddress1">Street Address 1*:</label>
+          <input
+            type="text"
+            name="streetAddress1"
+            id="streetAddress1"
+            placeholder="Street Address 1"
+            required
+          />
+          <span class="error" id="streetAddress1Error"
+            >Street Address 1 is required.</span
+          >
+          <br /><br />
+
+          <label for="streetAddress2">Street Address 2:</label>
+          <input
+            type="text"
+            name="streetAddress2"
+            id="streetAddress2"
+            placeholder="Street Address 2"
+          />
+          <div class="char-counter" id="streetAddress2Counter">
+            0/50 characters used
+          </div>
+          <br /><br />
+
+          <label for="zipcode">ZipCode*:</label>
+          <input
+            type="text"
+            name="zipcode"
+            id="zipcode"
+            placeholder="XXXXX"
+            required
+          />
+          <span class="error" id="zipError">Zip code must be 5 digits.</span>
+          <br /><br />
+
+          <label for="source">How did you hear*:</label>
+          <input type="checkbox" name="source" value="facebook" /> Facebook
+          <input type="checkbox" name="source" value="google" /> Google
+          <input type="checkbox" name="source" value="yelp" /> Yelp
+          <span class="error" id="sourceError"
+            >Please select at least one option.</span
+          >
+          <br /><br />
+
+          <label for="comments">Comments*:</label>
+          <textarea
+            name="comments"
+            id="comments"
+            placeholder="Your comments"
+            rows="5"
+            cols="25"
+            required
+          ></textarea>
+          <span class="error" id="commentsError">Comments are required.</span>
+          <br /><br />
+
+          <label for="itemSelect">Select a Laptop:</label>
+          <select id="itemSelect" onchange="addCheckboxes()">
+            <option value="">Select a laptop</option>
+            <option value="MacBook">MacBook</option>
+            <option value="Dell">Dell</option>
+            <option value="HP">HP</option>
+            <option value="Acer">Acer</option>
+            <option value="Asus">Asus</option>
+          </select>
+          <div id="checkboxContainer"></div>
+          <br /><br />
+
+          <input type="Submit" id="submitButton" disabled />
+          <input type="Reset" />
+        </form>
+
+        <div id="submittedDataTable"></div>
+      </main>
+    </div>
+
+    <script src="Form.js"></script>
+  </body>
+</html>
