@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="calculator.js" defer></script>
+  </head>
+  <body>
+    <div class="container" id="loginSection">
+      <h2>Login</h2>
+      <input type="text" id="email" placeholder="Email" />
+      <span id="emailError" class="error"></span>
+
+      <input type="text" id="username" placeholder="Username" />
+      <span id="usernameError" class="error"></span>
+
+      <input type="password" id="password" placeholder="Password" />
+      <span id="passwordError" class="error"></span>
+
+      <input
+        type="password"
+        id="confirmPassword"
+        placeholder="Confirm Password"
+      />
+      <span id="confirmPasswordError" class="error"></span>
+
+      <button id="loginButton" disabled>Login</button>
+    </div>
+
+    <div class="container" id="calculatorSection" style="display: none">
+      <h2>Calculator</h2>
+      <span id="loggedInUser"></span>
+
+      <input type="text" id="num1" placeholder="Number 1" />
+      <span id="num1Error" class="error"></span>
+
+      <input type="text" id="num2" placeholder="Number 2" />
+      <span id="num2Error" class="error"></span>
+
+      <button class="calc-btn" data-op="add">Add</button>
+      <button class="calc-btn" data-op="subtract">Subtract</button>
+      <button class="calc-btn" data-op="multiply">Multiply</button>
+      <button class="calc-btn" data-op="divide">Divide</button>
+
+      <input type="text" id="result" placeholder="Result" readonly />
+      <button id="logoutButton">Logout</button>
+    </div>
+  </body>
+</html>
