@@ -1,0 +1,14 @@
+@import '../abstracts/variables';
+
+$color: 'blue';
+
+.button-#{'color-' + $color} {
+  background-color: $primary-color;
+  color: $color;
+}
+
+@for $i from 1 to 5 {
+  .item-#{$i} {
+    width: 100px * $i;
+  }
+}

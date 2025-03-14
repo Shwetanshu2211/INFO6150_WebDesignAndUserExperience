@@ -1,0 +1,25 @@
+@mixin button-style($bg-color) {
+    background-color: $bg-color;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: $border-radius;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s;
+  
+    &:hover {
+      background-color: darken($bg-color, 10%);
+    }
+  }
+  // Add this to your existing SCSS file
+.about-button-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  margin-top: 50px;        
+}
+
+.about-button-container .button {
+  @include button-style($secondary-color);
+}

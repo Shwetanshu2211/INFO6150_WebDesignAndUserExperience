@@ -1,0 +1,17 @@
+.index-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .index-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .index-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}/*# sourceMappingURL=grid.css.map */

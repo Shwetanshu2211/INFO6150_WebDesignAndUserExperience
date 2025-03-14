@@ -1,0 +1,228 @@
+.about-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.about-button-container .button {
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+.about-button-container .button:hover {
+  background-color: #25a25a;
+}
+
+:root {
+  --main-bg-color: #f4f4f4;
+  --main-font-family: "Arial", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--main-bg-color);
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.header {
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.index-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .index-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .index-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.about-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.about-button-container .button {
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+.about-button-container .button:hover {
+  background-color: #25a25a;
+}
+
+.button {
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+.button:hover {
+  background-color: #25a25a;
+}
+
+.home-button-container .button {
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.home-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.about-button-container {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  align-items: center; /* Center the button vertically (if needed) */
+  width: 100%; /* Make sure the container takes full width */
+  margin-top: 50px; /* Optional: Adds some space above */
+}
+
+.about-button-container .button {
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+.about-button-container .button:hover {
+  background-color: #25a25a;
+}
+
+.phone-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+}
+.phone-card img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.phone-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.phone-card .price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 900px;
+}
+@media (min-width: 768px) {
+  .about-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .about-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.about-content__section {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-content__who-we-are,
+.about-content__mission,
+.about-content__why-choose-us {
+  border-left: 5px solid hsl(0, 0%, 100%);
+}
+
+.button-color-blue {
+  background-color: #3498db;
+  color: "blue";
+}
+
+.item-1 {
+  width: 100px;
+}
+
+.item-2 {
+  width: 200px;
+}
+
+.item-3 {
+  width: 300px;
+}
+
+.item-4 {
+  width: 400px;
+}/*# sourceMappingURL=main.css.map */

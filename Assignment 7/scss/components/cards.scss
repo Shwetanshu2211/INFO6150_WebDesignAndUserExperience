@@ -1,0 +1,27 @@
+@import '../abstracts/variables';
+
+.phone-card {
+    background: white;
+    border-radius: $border-radius;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+  
+    img {
+      max-width: 100%;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+  
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+  
+    .price {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: map-get($colors, danger);
+    }
+  }
+  

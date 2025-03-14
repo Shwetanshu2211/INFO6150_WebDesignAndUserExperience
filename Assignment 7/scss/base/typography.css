@@ -1,0 +1,9 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--main-bg-color);
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}/*# sourceMappingURL=typography.css.map */

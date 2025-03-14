@@ -1,0 +1,12 @@
+@import '../abstracts/variables';
+
+body {
+    font-family: $font-family;
+    background-color: var(--main-bg-color);
+  }
+  
+  h1, h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  

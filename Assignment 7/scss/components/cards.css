@@ -1,0 +1,21 @@
+.phone-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+}
+.phone-card img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.phone-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.phone-card .price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e74c3c;
+}/*# sourceMappingURL=cards.css.map */

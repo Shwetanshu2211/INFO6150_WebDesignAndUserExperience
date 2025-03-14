@@ -1,0 +1,28 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.button {
+  @include button-style($secondary-color);
+}
+
+%button-style {
+  background-color: $secondary-color;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: $border-radius;
+  margin-top: 50px;
+}
+
+.home-button-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  width: 100%;             
+  height: 100vh;           
+}
+
+.home-button-container .button {
+  @extend %button-style;
+}
+

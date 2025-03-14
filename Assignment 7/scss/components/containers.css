@@ -1,0 +1,29 @@
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 900px;
+}
+@media (min-width: 768px) {
+  .about-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .about-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.about-content__section {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-content__who-we-are,
+.about-content__mission,
+.about-content__why-choose-us {
+  border-left: 5px solid hsl(0, 0%, 100%);
+}/*# sourceMappingURL=containers.css.map */
